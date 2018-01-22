@@ -1,0 +1,9 @@
+<div class="dropdown">
+    <button class="btn btn-toolbox dropdown-toggle" type="button" data-toggle="dropdown" aria-expanded="true" ng-click="showFilters()">
+        <span class="ddfilter-selected">{{ currentFilter.selected.title }}</span><span class="caret"></span>
+    </button><ul class="dropdown-menu" role="menu">
+        <li role="presentation" ng-repeat="filter in filterValues"><a role="menuitem" tabindex="-1" href="#" ng-click="selectFilter(filter)">{{ filter.title }}</a></li>
+        <li class="divider"></li>
+        <li role="presentation"><a role="menuitem" tabindex="-1" href="#" ng-click="selectFilter(allFilterValue)">{{ allFilterValue.title }}</a></li>
+    </ul>
+</div>
